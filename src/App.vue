@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <Header />
+    <HeaderContainer />
     <Main />
     <Footer />
   </div>
 </template>
 
 <script>
-import Header from "./components/Header.vue";
+import HeaderContainer from "./components/HeaderContainer.vue";
 import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    Header,
+    HeaderContainer,
     Main,
     Footer,
   },
@@ -22,7 +22,9 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap');
 @import "~bootstrap/scss/bootstrap.scss";
+@import "./style/variables.scss";
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -30,6 +32,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+
+body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 </style>
