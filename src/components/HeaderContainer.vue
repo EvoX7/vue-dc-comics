@@ -8,18 +8,16 @@
         /></a>
       </div>
        <ul class="d-flex">
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          <li>dgtdh</li>
-          
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
+          <li>collectibles</li>
         </ul>
     </nav>
   </header>
@@ -54,14 +52,14 @@ header {
   }
 
 
-  a,
   li {
+    text-transform: uppercase;
     font-size: 17px;
-    font-weight: bold;
     color: black;
     list-style: none;
     padding: 0px 10px;
     border-bottom: 2px solid transparent;
+    cursor: pointer;
    
 
     &:hover {

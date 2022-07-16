@@ -3,10 +3,6 @@
     <div class="d-flex justify-content-center align-items-center" id="banner-top">
         <h1>Batman forever</h1>
     </div>
-    <div class="d-flex justify-content-center align-items-center" id="banner-bottom">
-        <h2>Wonder woman too!</h2> 
-         
-    </div>
     
   </main>
   
@@ -27,10 +23,7 @@ export default {
     background-color: $brandSecondary;
     height: 140px;
   }
-  #banner-bottom {
-    background-color: $brandPrimary;
-    height: 160px;
-  }
+ 
 
   h1 {
     color: yellow;
