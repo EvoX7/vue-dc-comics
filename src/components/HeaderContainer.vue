@@ -1,57 +1,26 @@
 <template>
   <header>
-    <div id="top-bar"></div>
-
-    <nav class="navbar navbar-expand-lg navbar-light">
-      
-      <div class="container">
-        <div>
-          <a href="https://www.dccomics.com/"><img id="logo" src="../assets/img/dc-logo.png" alt="dclogo" /></a>
-        </div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav text-uppercase">
-            <a class="nav-link text-dark" href="#">Characters</a>
-            <a class="nav-link text-dark" href="#">Comics</a>
-            <a class="nav-link text-dark" href="#">Movies</a>
-            <a class="nav-link text-dark" href="#">Tv</a>
-            <a class="nav-link text-dark" href="#">Games</a>
-            <a class="nav-link text-dark" href="#">Collectibles</a>
-            <a class="nav-link text-dark" href="#">Videos</a>
-            <a class="nav-link text-dark" href="#">Fans</a>
-            <a class="nav-link text-dark" href="#">News</a>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Shop
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-          </div>
-        </div>
+    <div class="" id="top-bar"></div>
+    <nav class="container d-flex align-items-center justify-content-between">
+      <div>
+        <a href="https://www.dccomics.com/"
+          ><img id="logo" src="../assets/img/dc-logo.png" alt="dclogo"
+        /></a>
       </div>
+       <ul class="d-flex">
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          <li>dgtdh</li>
+          
+        </ul>
     </nav>
   </header>
 </template>
@@ -63,6 +32,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../style/variables.scss";
 
 header {
   height: 150px;
@@ -79,20 +49,24 @@ header {
   }
 
   #logo {
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
   }
+
 
   a,
   li {
     font-size: 17px;
-    font-weight: bolder;
-    padding-left:15px;
-    
-  }
+    font-weight: bold;
+    color: black;
+    list-style: none;
+    padding: 0px 10px;
+    border-bottom: 2px solid transparent;
+   
 
-  // .ms_container_nav {
-    
-  // }
+    &:hover {
+      border-bottom: 2px solid $brandPrimary;
+    }
+  }
 }
 </style>

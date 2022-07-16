@@ -25,11 +25,11 @@ export default {
 
   #banner-top {
     background-color: $brandSecondary;
-    height: 120px;
+    height: 140px;
   }
   #banner-bottom {
     background-color: $brandPrimary;
-    height: 150px;
+    height: 160px;
   }
 
   h1 {
