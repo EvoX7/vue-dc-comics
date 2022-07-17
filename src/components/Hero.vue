@@ -36,7 +36,7 @@ export default {};
   background-color: $brandPrimary;
 
   img {
-    width: 55px;
+    width: 50px;
     height: 55px;
   }
 }
