@@ -4,7 +4,7 @@
       class="d-flex justify-content-center align-items-center"
       id="banner-top"
     >
-      <h1>Batman forever</h1>
+      <img class="image-fluid" src="../assets/img/Batman-Logo.png" alt="batlogo">
     </div>
   </main>
 </template>
@@ -29,5 +29,12 @@ h1 {
 
 h2 {
   color: rgb(255, 255, 255);
+}
+
+img {
+  width: 280px;
+  height: 160px;
+  
+ 
 }
 </style>

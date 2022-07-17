@@ -260,6 +260,7 @@ footer {
 
   li {
     list-style: none;
+    letter-spacing: 1px;
   }
 
   a {
