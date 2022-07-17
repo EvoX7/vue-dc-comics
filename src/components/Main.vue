@@ -35,6 +35,5 @@ img {
   width: 280px;
   height: 160px;
   
- 
 }
 </style>
