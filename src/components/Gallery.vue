@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="container d-flex flex-wrap">
+    <div class="container d-flex flex-wrap pt-5">
       <ProductThumb
         v-for="(product, index) in ProductsThumbnails"
         :key="index"
@@ -9,6 +9,25 @@
         :comicPrice="product.price"
         :comicType="product.type"
       />
+    </div>
+
+    <div
+      class="text-uppercase d-flex align-items-center justify-content-center mt-4"
+      id="btn-loadmore"
+    >
+      <a
+        class="text-decoration-none text-white"
+        href="https://www.dccomics.com/newsletter"
+      >
+        <span>Load More</span></a
+      >
+    </div>
+
+ <div
+      class="text-uppercase d-flex align-items-center justify-content-center mt-4"
+      id="current-series">
+        <span>Current Series</span>
+ </div>
     </div>
   </main>
 </template>
@@ -117,8 +136,10 @@ export default {
 @import "../style/variables.scss";
 
 main {
+  position: relative;
   background-color: $brandSecondary;
   color: white;
+  padding-bottom:20px;
 }
 
 .container {
@@ -126,8 +147,38 @@ main {
   background-color: $brandSecondary;
 }
 
-  img {
-    object-fit: cover;
+#btn-loadmore {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: $brandPrimary;
+  width: 180px;
+  height: 35px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin:0 auto;
+  
+
+  &:hover {
+    background-color: $brandTertiary;
+    border: 1px solid $brandPrimary;
   }
 
+}
+
+#current-series {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  background-color: $brandPrimary;
+  width: 250px;
+  height: 55px;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+  margin:0 auto;
+  position: absolute;
+  left: 300px;
+  bottom: 600px;
+
+  
+}
 </style>

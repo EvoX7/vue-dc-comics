@@ -1,11 +1,13 @@
 <template>
   <div class="thumb_wrapper">
     <div
-      class="container_imgs"
+      class=" container_imgs"
       :key="index">
       <img :src="thumbImg" alt="thumbnails" />
+      
     </div>
-    <h6>{{ comicSeries }}</h6>
+     <h6>{{ comicSeries }}</h6>
+   
   </div>
 </template>
 
@@ -23,13 +25,27 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 
-.container_imgs {
-    margin-top:50px;
-   
+
+
+img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: scale(1.1);
+        
+    }
     
 }
 
 h6 {
+    text-align: center;
+    padding:10px;
     text-transform: uppercase;
 }
 </style>
