@@ -82,7 +82,7 @@
         /></a>
         <a class="social-hover" href="http://www.pinterest.com/dccomics/">
           <img
-            class="px-1"
+            class="px-1 social-hover"
             src="../assets/img/footer-pinterest.png"
             alt="pinterest"
         /></a>
@@ -95,7 +95,6 @@
       </div>
     </div>
 
-    <div id="bottom-footer"></div>
   </footer>
 </template>
 
@@ -265,7 +264,7 @@ footer {
 
   a {
     text-decoration: none;
-    color: rgb(139, 139, 139);
+    color: rgb(160, 160, 160);
 
     &:hover {
       color: $brandPrimary;
@@ -280,11 +279,6 @@ footer {
   #footer-socials {
     display: flex;
     align-content: center;
-  }
-
-  #bottom-footer {
-    background-color: #222222;
-    height: 20px;
   }
 
   #footer-nav {

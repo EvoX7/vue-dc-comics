@@ -1,6 +1,5 @@
 <template>
   <header>
-    <div class="" id="top-bar"></div>
     <nav class="container d-flex align-items-center justify-content-between">
       <div>
         <a href="https://www.dccomics.com/"
@@ -73,15 +72,11 @@ export default {
 @import "../style/variables.scss";
 
 header {
-  height: 150px;
-
-  #top-bar {
-    background-color: #212121;
-    height: 20px;
-  }
+  display: flex;
+  align-content: center;
+  height: 130px;
 
   nav {
-    height: 130px;
     background-color: white;
     font-family: "Yanone Kaffeesatz", sans-serif;
   }

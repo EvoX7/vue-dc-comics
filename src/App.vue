@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <HeaderContainer />
-    <Main />
+    <Hero />
+    <Gallery />
     <BlueBanner />
     <Footer />
   </div>
@@ -9,7 +10,9 @@
 
 <script>
 import HeaderContainer from "./components/HeaderContainer.vue";
-import Main from "./components/Main.vue";
+import Hero from "./components/Hero.vue";
+import Gallery from "./components/Gallery.vue";
+import ProductThumb from "./components/ProductThumb.vue";
 import BlueBanner from "./components/BlueBanner.vue"
 import Footer from "./components/Footer.vue";
 
@@ -17,7 +20,9 @@ export default {
   name: "App",
   components: {
     HeaderContainer,
-    Main,
+    Hero,
+    Gallery,
+    ProductThumb,
     BlueBanner,
     Footer,
   },

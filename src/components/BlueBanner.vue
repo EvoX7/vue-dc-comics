@@ -6,7 +6,7 @@
       :key="index"
     >
       <a :href="product.url_2">
-        <img :src="product.url" alt="products" />
+        <img :src="product.url" :alt="product.text" />
         <span id="products-text">{{ product.text }}</span></a
       >
     </div>
