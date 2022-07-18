@@ -1,12 +1,11 @@
 <template>
   <div class="thumb_wrapper">
     <div
-      class=" container_imgs"
-      :key="index">
+      class="container_imgs ">
       <img :src="thumbImg" alt="thumbnails" />
-      
     </div>
-     <h6>{{ comicSeries }}</h6>
+    <h6 class="text-wrap">{{ comicSeries }}</h6>
+    
    
   </div>
 </template>
@@ -44,8 +43,9 @@ img {
 }
 
 h6 {
+  padding:5px;
     text-align: center;
-    padding:10px;
     text-transform: uppercase;
+    
 }
 </style>

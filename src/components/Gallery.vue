@@ -12,7 +12,13 @@
     </div>
 
     <div
-      class="text-uppercase d-flex align-items-center justify-content-center mt-4"
+      class="
+        text-uppercase
+        d-flex
+        align-items-center
+        justify-content-center
+        mt-5
+      "
       id="btn-loadmore"
     >
       <a
@@ -23,11 +29,17 @@
       >
     </div>
 
- <div
-      class="text-uppercase d-flex align-items-center justify-content-center mt-4"
-      id="current-series">
-        <span>Current Series</span>
- </div>
+    <div
+      class="
+        text-uppercase
+        d-flex
+        align-items-center
+        justify-content-center
+        mt-4
+      "
+      id="current-series"
+    >
+      <span>Current Series</span>
     </div>
   </main>
 </template>
@@ -116,7 +128,7 @@ export default {
           thumb:
             "https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/10/BMWK_HQ_01_300-001_HD_5f7cb4945e13f6.89501032.jpg?itok=sVwALbUX",
           price: "$4.99",
-          series: "Batman: White Knight Presents: Harley Quinn",
+          series: "Batman: White Knight: Harley Quinn",
           type: "comic book",
         },
         {
@@ -139,7 +151,6 @@ main {
   position: relative;
   background-color: $brandSecondary;
   color: white;
-  padding-bottom:20px;
 }
 
 .container {
@@ -156,14 +167,12 @@ main {
   font-weight: bold;
   cursor: pointer;
   transition: 0.3s;
-  margin:0 auto;
-  
+  margin: 0 auto;
 
   &:hover {
     background-color: $brandTertiary;
     border: 1px solid $brandPrimary;
   }
-
 }
 
 #current-series {
@@ -174,11 +183,9 @@ main {
   font-size: 30px;
   font-weight: bold;
   transition: 0.3s;
-  margin:0 auto;
-  position: absolute;
-  left: 300px;
-  bottom: 600px;
-
-  
+  margin: 0 auto;
+  position: relative;
+  bottom: 660px;
+  right: 550px;
 }
 </style>
