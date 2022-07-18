@@ -1,16 +1,14 @@
 <template>
   <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <ProductThumb v-for="(product, index) in ProductsThumbnails" :key="index"
-          :thumbImg="product.thumb"
-          :comicseries="product.series"
-          :comicprice="product.price"
-          :comictype="product.type"
-          />
-        </div>
-      </div>
+    <div class="container d-flex flex-wrap">
+      <ProductThumb
+        v-for="(product, index) in ProductsThumbnails"
+        :key="index"
+        :thumbImg="product.thumb"
+        :comicSeries="product.series"
+        :comicPrice="product.price"
+        :comicType="product.type"
+      />
     </div>
   </main>
 </template>
@@ -18,7 +16,7 @@
 <script>
 import ProductThumb from "./ProductThumb.vue";
 export default {
-  name:"Gallery",
+  name: "Gallery",
   components: {
     ProductThumb,
   },
@@ -128,11 +126,8 @@ main {
   background-color: $brandSecondary;
 }
 
-.container_imgs {
-  height: 200px;
-
   img {
     object-fit: cover;
   }
-}
+
 </style>
