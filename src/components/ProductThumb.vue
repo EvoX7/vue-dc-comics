@@ -5,8 +5,6 @@
       <img :src="thumbImg" alt="thumbnails" />
     </div>
     <h6 class="text-wrap">{{ comicSeries }}</h6>
-    
-   
   </div>
 </template>
 
@@ -15,7 +13,7 @@ export default {
   props: {
     "thumbImg": String,
     "comicSeries": String,
-    "comicPrice": String,
+    "comicPrice": [String, Number],
     "comicType": String,
   },
 };
@@ -23,8 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
-
-
 
 img {
     width: 200px;
@@ -37,15 +33,13 @@ img {
 
     &:hover {
         transform: scale(1.1);
-        
     }
     
 }
 
 h6 {
-  padding:5px;
+    padding:5px;
     text-align: center;
     text-transform: uppercase;
-    
 }
 </style>

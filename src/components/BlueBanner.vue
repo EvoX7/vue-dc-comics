@@ -3,8 +3,7 @@
     <div
       id="internal-container"
       v-for="(product, index) in products"
-      :key="index"
-    >
+      :key="index">
       <a :href="product.url_2">
         <img :src="product.url" :alt="product.text" />
         <span id="products-text">{{ product.text }}</span></a
@@ -60,6 +59,7 @@ export default {
   justify-content: center;
   padding: 20px;
   background-color: $brandPrimary;
+}
 
   #internal-container {
     padding: 30px;
@@ -84,6 +84,5 @@ export default {
     color: white;
     padding-left: 20px;
   }
-}
 </style>
 

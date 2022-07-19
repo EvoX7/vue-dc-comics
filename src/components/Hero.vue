@@ -17,7 +17,4 @@ export default {
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: 1950px;
 }
-
-
-
 </style>

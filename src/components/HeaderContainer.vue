@@ -75,6 +75,7 @@ header {
   display: flex;
   align-content: center;
   height: 130px;
+}
 
   nav {
     background-color: white;
@@ -109,5 +110,4 @@ header {
       color: $brandPrimary;
     }
   }
-}
 </style>

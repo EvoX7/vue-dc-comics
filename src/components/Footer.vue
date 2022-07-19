@@ -222,6 +222,7 @@ export default {
 footer {
   position: relative;
   background-color: $brandTertiary;
+}
 
   #sub-footer1 {
     background-color: $brandTertiary;
@@ -287,5 +288,4 @@ footer {
     display: flex;
     font-family: "Yanone Kaffeesatz", sans-serif;
   }
-}
 </style>
