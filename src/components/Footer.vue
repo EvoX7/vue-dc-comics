@@ -46,6 +46,7 @@
       </div>
     </div>
 
+<!-- Bottom footer  -->
     <div
       class="container d-flex justify-content-between align-items-center"
       id="sub-footer1"

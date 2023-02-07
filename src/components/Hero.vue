@@ -15,6 +15,6 @@ export default {
 #img-container {
     height: 380px;
     background-image: url(../assets/img/jumbotron.jpg);
-    background-size: 1950px;
+    background-size: 2100px;
 }
 </style>
